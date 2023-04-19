@@ -2,7 +2,16 @@ Rails.application.routes.draw do
   resources :products
   resources :ecommerce_websites
   resources :search_histories
-  resources :users
+  resources :users, only: [:create]
+
+
+  post "/login", to:"auth#login"
+  delete "/logout", to: "auth#logout"
+  get "/me", to: "users#me"
+
+  # Routing logic: fallback requests for React Router.
+  # Leave this here to help deploy your app later!
+  get "*path", to: "fallback#index", constraints: ->(req) { !req.xhr? && req.format.html? }
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
