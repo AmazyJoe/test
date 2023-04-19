@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @ecommerce_website %>
+
+<div>
+  <%= link_to "Edit this ecommerce website", edit_ecommerce_website_path(@ecommerce_website) %> |
+  <%= link_to "Back to ecommerce websites", ecommerce_websites_path %>
+
+  <%= button_to "Destroy this ecommerce website", @ecommerce_website, method: :delete %>
+</div>

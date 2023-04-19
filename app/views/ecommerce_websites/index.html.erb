@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Ecommerce websites</h1>
+
+<div id="ecommerce_websites">
+  <% @ecommerce_websites.each do |ecommerce_website| %>
+    <%= render ecommerce_website %>
+    <p>
+      <%= link_to "Show this ecommerce website", ecommerce_website %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New ecommerce website", new_ecommerce_website_path %>

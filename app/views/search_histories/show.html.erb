@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @search_history %>
+
+<div>
+  <%= link_to "Edit this search history", edit_search_history_path(@search_history) %> |
+  <%= link_to "Back to search histories", search_histories_path %>
+
+  <%= button_to "Destroy this search history", @search_history, method: :delete %>
+</div>
