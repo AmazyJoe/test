@@ -1,60 +1,17 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: %i[ show edit update destroy ]
+  skip_before_action :authorized, only: [:create]
+  rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response
 
-  # GET /users or /users.json
-  def index
-    @users = User.all
+
+  def me
+    render json: { user: current_user }, status: :accepted
   end
 
-  # GET /users/1 or /users/1.json
-  def show
-  end
-
-  # GET /users/new
-  def new
-    @user = User.new
-  end
-
-  # GET /users/1/edit
-  def edit
-  end
-
-  # POST /users or /users.json
+  # POST /users or /users.json signup
   def create
-    @user = User.new(user_params)
-
-    respond_to do |format|
-      if @user.save
-        format.html { redirect_to user_url(@user), notice: "User was successfully created." }
-        format.json { render :show, status: :created, location: @user }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # PATCH/PUT /users/1 or /users/1.json
-  def update
-    respond_to do |format|
-      if @user.update(user_params)
-        format.html { redirect_to user_url(@user), notice: "User was successfully updated." }
-        format.json { render :show, status: :ok, location: @user }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # DELETE /users/1 or /users/1.json
-  def destroy
-    @user.destroy
-
-    respond_to do |format|
-      format.html { redirect_to users_url, notice: "User was successfully destroyed." }
-      format.json { head :no_content }
-    end
+    @user = User.create!(user_params)
+      @token = encode_token({ user_id: @user.id })
+      render json: { user: @user, jwt: @token }, status: :created
   end
 
   private
@@ -65,6 +22,11 @@ class UsersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def user_params
-      params.require(:user).permit(:first_name, :last_name, :email, :password_digest)
+      params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
     end
+
+    def render_unprocessable_entity_response(invalid)
+      render json: { errors: invalid.record.errors }, status: :unprocessable_entity
+  end
+
 end
