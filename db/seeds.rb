@@ -63,12 +63,37 @@ create_product_entries("iPhone 14 pro", 152.99, 150.00, "Fast Shipping", "https:
 
 
 
-create_product_entries("Samsung QLED tv", 560.99, 50.00, "Fast Shipping", "https://s.alicdn.com/@sc04/kf/Ha4e6641661ac4bb88f4416813c4d014eA.jpg_300x300.jpg", "https://www.amazon.com/s?k=samsung+qled&crid=1P2SH32041AYF&sprefix=samsung+qle%2Caps%2C573&ref=nb_sb_ss_ts-doa-p_2_11", "amazon")
-create_product_entries("Samsung QLED tv", 497.99, 50.00, "Fast Shipping", "https://m.media-amazon.com/images/I/71bmtncxa+L._AC_UY218_.jpg", "https://www.alibaba.com/trade/search?tab=all&searchText=samsung+Qled+tv", "alibaba")
-create_product_entries("Samsung QLED tv", 495.99, 50.00, "Fast Shipping", "https://i.ebayimg.com/thumbs/images/g/Y88AAOSwuWpjYT9G/s-l300.webp", "https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=samsung+qled&_sacat=0&LH_TitleDesc=0&_odkw=iphone+14+pro&_osacat=0", "ebay")
+create_product_entries("Samsung QLED tv", 560.99, 30.00, "Fast Shipping", "https://s.alicdn.com/@sc04/kf/Ha4e6641661ac4bb88f4416813c4d014eA.jpg_300x300.jpg", "https://www.amazon.com/s?k=samsung+qled&crid=1P2SH32041AYF&sprefix=samsung+qle%2Caps%2C573&ref=nb_sb_ss_ts-doa-p_2_11", "amazon")
+create_product_entries("Samsung QLED tv", 497.99, 80.00, "Fast Shipping", "https://m.media-amazon.com/images/I/71bmtncxa+L._AC_UY218_.jpg", "https://www.alibaba.com/trade/search?tab=all&searchText=samsung+Qled+tv", "alibaba")
+create_product_entries("Samsung QLED tv", 495.99, 100.00, "Fast Shipping", "https://i.ebayimg.com/thumbs/images/g/Y88AAOSwuWpjYT9G/s-l300.webp", "https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=samsung+qled&_sacat=0&LH_TitleDesc=0&_odkw=iphone+14+pro&_osacat=0", "ebay")
 
-create_product_entries("LG OLED TV", 269.99, 50.00, "Fast Shipping", "https://m.media-amazon.com/images/I/91zoO1AAfBS._AC_UY218_.jpg", "https://www.amazon.com/s?k=LG+OLED&crid=QNU0S8F0UJBO&sprefix=lg+oled%2Caps%2C520&ref=nb_sb_noss_1", "amazon")
-create_product_entries("LG OLED TV", 500.99, 50.00, "Fast Shipping", "https://s.alicdn.com/@sc04/kf/Hade73df54cf94eb98321065fc04b2519H.jpg_300x300.jpg", "https://www.alibaba.com/trade/search?tab=all&searchText=lg+oled", "alibaba")
-create_product_entries("LG OLED TV", 947.99, 50.00, "Fast Shipping", "https://i.ebayimg.com/thumbs/images/g/NiwAAOSwSLZihO2W/s-l300.webp", "https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=LG+OLED+TV&_sacat=0&LH_TitleDesc=0&_odkw=samsung+qled&_osacat=0", "ebay")
+create_product_entries("LG OLED TV", 269.99, 60.00, "Fast Shipping", "https://m.media-amazon.com/images/I/91zoO1AAfBS._AC_UY218_.jpg", "https://www.amazon.com/s?k=LG+OLED&crid=QNU0S8F0UJBO&sprefix=lg+oled%2Caps%2C520&ref=nb_sb_noss_1", "amazon")
+create_product_entries("LG OLED TV", 500.99, 30.00, "Fast Shipping", "https://s.alicdn.com/@sc04/kf/Hade73df54cf94eb98321065fc04b2519H.jpg_300x300.jpg", "https://www.alibaba.com/trade/search?tab=all&searchText=lg+oled", "alibaba")
+create_product_entries("LG OLED TV", 947.99, 70.00, "Fast Shipping", "https://i.ebayimg.com/thumbs/images/g/NiwAAOSwSLZihO2W/s-l300.webp", "https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=LG+OLED+TV&_sacat=0&LH_TitleDesc=0&_odkw=samsung+qled&_osacat=0", "ebay")
 
+
+
+create_product_entries("Macbook air", 399.99, 60.00, "Fast Shipping", "https://m.media-amazon.com/images/I/71f5Eu5lJSL._AC_UY218_.jpg", "https://www.amazon.com/s?k=macbook+air&crid=1AFPH667H92JX&sprefix=macbook%2Caps%2C401&ref=nb_sb_ss_ts-doa-p_2_7", "amazon")
+create_product_entries("Macbook air", 220.99, 40.00, "Fast Shipping", "https://s.alicdn.com/@sc04/kf/Hbd73563ca3174f178379c2d068acae0cG.jpg_300x300.jpg", "https://www.alibaba.com/product-detail/Unlocked-Used-Laptop-For-2020-13_1600251017576.html?spm=a2700.galleryofferlist.normal_offer.d_image.c5ca4a6ck7E1o0", "alibaba")
+create_product_entries("Macbook air", 179.99, 50.00, "Fast Shipping", "https://i.ebayimg.com/thumbs/images/g/sbYAAOSwPGlj~ZMF/s-l300.webp", "https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=macbook+air&_sacat=0", "ebay")
+
+
+create_product_entries("hp Elitebook", 355.99, 30.00, "Fast Shipping", "https://m.media-amazon.com/images/I/81JaA+TabBL._AC_UL320_.jpg", "https://www.amazon.com/s?k=hp+elitebook&crid=2P4L8NFSB0FBL&sprefix=hp+elitebook%2Caps%2C322&ref=nb_sb_noss_2", "amazon")
+create_product_entries("hp Elitebook", 199.99, 10.00, "Fast Shipping", "https://s.alicdn.com/@sc04/kf/H2b49388230124c0fb505f0588efe60b4M.jpg_300x300.jpg", "https://www.alibaba.com/trade/search?IndexArea=product_en&CatId=&fsb=y&viewtype=&tab=all&SearchScene=&SearchText=hp+elitebook", "alibaba")
+create_product_entries("hp Elitebook", 189.99, 40.00, "Fast Shipping", "https://i.ebayimg.com/thumbs/images/g/xmQAAOSwv81kIh3K/s-l300.webp", "https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=hp+elite+book&_sacat=0&LH_TitleDesc=0&_odkw=macbook+air&_osacat=0", "ebay")
+
+
+create_product_entries("iPad pro", 793.99, 70.00, "Fast Shipping", "https://m.media-amazon.com/images/I/81c+9BOQNWL._AC_UY218_.jpg", "https://www.amazon.com/s?k=ipad+pro&crid=19LNOKAYR6Z8Y&sprefix=ipad%2Caps%2C559&ref=nb_sb_ss_ts-doa-p_3_4", "amazon")
+create_product_entries("iPad pro", 389.99, 60.00, "Fast Shipping", "https://s.alicdn.com/@sc04/kf/Hb0b31e9a9156458eb80a1c1fbd975c4c1.jpg_300x300.jpg", "https://www.alibaba.com/trade/search?spm=a2700.galleryofferlist.0.0.55a73956xA3Z5y&SearchScene=themePage&themeScene=cloudTheme&themeIds=feed&sceneId=leaderBoard&SearchText=ipad+pro&themeId=&themeName=leaderBoard", "alibaba")
+create_product_entries("iPad pro", 779.99, 50.00, "Fast Shipping", "https://i.ebayimg.com/thumbs/images/g/k2kAAOSw~u5iAPWP/s-l300.webp", "https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=ipad+pro&_sacat=0&LH_TitleDesc=0&_odkw=hp+elite+book&_osacat=0", "ebay")
+
+
+create_product_entries("jbl flip 6", 99.99, 80.00, "Fast Shipping", "https://m.media-amazon.com/images/I/61Z05Wv903L._AC_UY218_.jpg", "https://www.amazon.com/s?k=jbl+flip6&crid=2ACHZG2JG23FE&sprefix=jbl+flip6%2Caps%2C472&ref=nb_sb_noss_1", "amazon")
+create_product_entries("jbl flip 6", 110.99, 50.00, "Fast Shipping", "https://s.alicdn.com/@sc04/kf/Aab2db5e84f6f485cbc2ac1fcb5a7d809O.jpg_300x300.jpg", "https://www.alibaba.com/trade/search?IndexArea=product_en&CatId=&fsb=y&viewtype=&tab=all&SearchScene=&SearchText=jbl+flip+6", "alibaba")
+create_product_entries("jbl flip 6", 79.99, 90.00, "Fast Shipping", "https://i.ebayimg.com/thumbs/images/g/zrUAAOSwl01kGhns/s-l300.webp", "https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=jbl+flip6&_sacat=0&LH_TitleDesc=0&_odkw=ipad+pro&_osacat=0", "ebay")
+
+
+create_product_entries("Nikon D3500", 719.99, 40.00, "Fast Shipping", "https://m.media-amazon.com/images/I/61s8FKpmqML._AC_UY218_.jpg", "https://www.amazon.com/s?k=nikon+camera&crid=MLOOMRS38GO6&sprefix=nikon+cam%2Caps%2C428&ref=nb_sb_ss_ts-doa-p_2_9", "amazon")
+create_product_entries("Nikon D3500", 450.99, 20.00, "Fast Shipping", "https://s.alicdn.com/@sc04/kf/H4b2c1b40f1374024a89a17ed233216c2v.jpg_300x300.jpg", "https://www.alibaba.com/trade/search?tab=all&searchText=Nikon+D3500+camra", "alibaba")
+create_product_entries("Nikon D3500", 535.99, 70.00, "Fast Shipping", "https://i.ebayimg.com/thumbs/images/g/qu4AAOSwbLRj6UAH/s-l300.webp", "https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=NIKON+D3500&_sacat=0&LH_TitleDesc=0&_odkw=jbl+flip6&_osacat=0", "ebay")
 
