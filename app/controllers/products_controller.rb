@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: %i[ show edit update destroy ]
+  skip_before_action :authorized,  only: %i[ index show ]
 
   # GET /products or /products.json
   def index
@@ -7,9 +7,10 @@ class ProductsController < ApplicationController
   end
 
   # GET /products/1 or /products/1.json
-  def show
+ def show
+    product = Product.find(params[:id])
+    render json: product, except:[:id, :created_at, :updated_at]
   end
-
   # GET /products/new
   def new
     @product = Product.new
